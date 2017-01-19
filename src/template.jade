@@ -14,25 +14,37 @@ html(lang="en")
 	body
 		.main-content
 			header
-				.wrapper
-					.logo
-					.menu-main
-						ul
-							li
-								a(href="") About
-							li
-								a(href="") Download
-							li
-								a(href="") Purchase
-							li
-								a(href="") Support
-							li
-								a(href="") Customers
-							li
-								a(href="") Company
+				.wrapper.header-info
+					.logo-menu
+						.logo
+							a(href="index.html") 
+								img(src="img/logo.png", alt="")
+						.main-menu
+							ul.main-menu-1level
+								li.menu-arrow
+									a(href="") About
+									ul.main-menu-2level
+										li
+											a(href="") Overview
+										li
+											a(href="") License
+										li
+											a(href="") Contributors
+										li
+											a(href="") Contacts
+								li
+									a(href="download.html") Download
+								li.active
+									a(href="") Purchase
+								li
+									a(href="") Support
+								li
+									a(href="") Customers
+								li
+									a(href="") Company
 					.registration
-						a.login Log in
-						a.sign-up(href="") sign up
+						a(href="").login Log in
+						a.btn.btn--sign-up(href="") sign up
 							
 			main
 				block content
@@ -40,7 +52,8 @@ html(lang="en")
 		footer
 			.wrapper.footer-menu
 				ul.footer-menu-1level
-					li About
+					li.menu-arrow
+						a(href="") About
 						ul.footer-menu-2level
 							li
 								a(href="") First Item
@@ -48,7 +61,8 @@ html(lang="en")
 								a(href="") Second Item
 							li
 								a(href="") Third Item
-					li Download
+					li 
+						a(href="") Download
 						ul.footer-menu-2level
 							li
 								a(href="") First Item
@@ -56,7 +70,8 @@ html(lang="en")
 								a(href="") Second Item
 							li
 								a(href="") Third Item
-					li Purchase
+					li 
+						a(href="") Purchase
 						ul.footer-menu-2level
 							li
 								a(href="") First Item
@@ -70,7 +85,7 @@ html(lang="en")
 						a(href="") Customers
 					li
 						a(href="") Company
-				.footer-copyright-menu
+				.footer-copyright-small-menu
 					.footer-copyright
 						p &copy; 2017 DBeaver
 					.footer-small-menu 
