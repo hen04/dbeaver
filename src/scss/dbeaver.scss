@@ -283,13 +283,15 @@ header {
 		display: flex;
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;
+		-webkit-justify-content: center;
+		justify-content: center;
 		padding: 80px 0;
 		&:nth-child(even) {
 			background-color: #f5f4f4;
 		}
 	}
 	&__item {
-		width: 33%;
+		width: 375px;
 		text-align: center;
 	}
 	img {
