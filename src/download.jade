@@ -1,4 +1,101 @@
 extends template.jade
 
 block content
-	11
+	.wrapper
+		.text-info
+			.text-info__header
+				h1 Download
+				h2 DBeaver Community Edition 3.8.3
+				p.lnk-big (
+					a(href="") DBeaver Enterprise Edition 
+					| )
+			p Released on 2017-01-09 ( 
+				a(href="") Milestones
+				| ) 
+			p Here you can download DBeaver Community Edition. It is free and open source ( 
+				a(href="") license
+				| ). <br>
+				| Also you can get it from the 
+				a(href="") GitHub mirror.
+		.download-info
+			.download-info__item
+				h3 Linux
+				p
+					a(href="") Linux Debian package 32 bit (installer) 
+				p
+					a(href="") Linux Debian package 64 bit (installer) 
+				p
+					a(href="") Linux RPM package 32 bit (installer) 
+				p
+					a(href="") Linux RPM package 64 bit (installer) 
+				p
+					a(href="") Linux 32 bit (tar.gz archive) 
+				p
+					a(href="") Linux 64 bit (tar.gz archive)
+			.download-info__item
+				h3 Mac OS X
+				p
+					a(href="") Mac OS X x86 64 bit (dmg) 
+				p
+					a(href="") Mac OS X x86 64 bit 
+				p
+					a(href="") (tar.gz archive)
+			.download-info__item
+				h3 Windows
+				p
+					a(href="") Windows 32 bit (installer + JRE)
+				p
+					a(href="") Windows 64 bit (installer + JRE)
+				p
+					a(href="") Windows 32 bit (zip archive)
+				p
+					a(href="") Windows 64 bit (zip archive)
+			.download-info__item
+				h3 Other
+				p
+					a(href="") Solaris x86 (tar.gz archive)
+		.text-info
+			p Tested and verified for MS Windows XP/7/8/10, Linux and Mac OS X.DBeaver itself requires Java 1.7 or higher. Windows installers includes JRE 1.8. If you are NOT on Windows you have to setup Java. 
+			p If you are on Mac OS X then you will need JDK 1.7+. Note: 3rd-party JDBC drivers may have have their own system requirements.
+		.text-info
+			h2 Install
+			p ZIP archive – extract archive and run “dbeaver” executable. Do not extract archive over previous version (remove previous version before install). Java 1.7+ must be installed separately. 
+			p Windows installer – run installer executable. It will automatically upgrade version (if needed). Installer doesn’t change any system settings or Java installation. Included JRE will be accessible only for DBeaver.
+			p Debian package – run sudo dpkg -i dbeaver-<version>.deb. Then execute “dbeaver &”. RPM package – run sudo rpm -ivh dbeaver-<version>.rpm. Then execute “dbeaver &”. Note: to upgrade use “-Uvh” parameter. Mac OS X – recent Mac OS versions may reject to install unsigned software. Check this topic for possible workarounds.
+		.text-info
+			h2 Enterprise Edition
+			p Download Enterprise Edition version if you need NoSQL databases support or additional project management features. EE version is also free but it is not open-source.
+		.text-info
+			h2 Eclipse plugin
+			p Update site URL: 
+				a(href="http://dbeaver.jkiss.org/update/latest/" target="_blank") http://dbeaver.jkiss.org/update/latest/ 
+				| (Multiplatform)
+			p Eclipse Marketplace direct install:
+				a(href="https://marketplace.eclipse.org/content/dbeaver" target="_blank")  https://marketplace.eclipse.org/content/dbeaver
+			p Eclipse plugin version is quite stable however it wasn’t tested as much as standalone version. Plugin will work with Eclipse 3.7.x, 3.8.x, 4.2.x-4.5.x. Required plugins: gef and draw2d.
+		.text-info
+			h2 Source code
+			p We have moved to GitHub. Community Edition sources, issue tracker, etc: 
+				a(href="https://github.com/serge-rider/dbeaver" target="_blank") https://github.com/serge-rider/dbeaver 
+				| Please star the repository!
+		.text-info
+			h2 Archive
+			p All recent DBeaver versions are available in 
+				a(href="") archive.
+		.text-info
+			h2 Notes
+			p DBeaver is free software. You can use it for any purpose with no limitations. This software is provided “as is” without express or implied warranty. 
+			p Windows Installer will automatically install DBeaver on your computer. Java Runtime will be installed as a part of DBeaver installation. If you already have JRE installed on your computer you may disable JRE option in installer. However it is recommended to use JRE shipped with DBeaver (it won’t be break any existing JRE installation, nothing will be copied in system folders, registry or environment variables). 
+			p Debian installer will setup all required components (including JRE) prior to DBeaver installation. 
+			p All other versions are just minimal archives that don’t contain the JRE or an installer. Just unzip and start dbeaver executable (if you upgrade from a previous DBeaver version then delete it before upgrade).
+			.counter
+				script(src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js")
+				script(src="//yastatic.net/share2/share.js")
+				.ya-share2(data-services="facebook,twitter,gplus" data-lang="en" data-size="s")
+		.text-info
+			h2 List
+			ul
+				li DBeaver is free software. You can use it for any purpose with no limitations. This software is provided “as is” without express or implied warranty. 
+				li Windows Installer will automatically install DBeaver on your computer. Java Runtime will be installed as a part of DBeaver installation. If you already have JRE installed on your computer you may disable JRE option in installer. However it is recommended to use JRE shipped with DBeaver (it won’t be break any existing JRE installation, nothing will be copied in system folders, registry or environment variables). 
+				li Debian installer will setup all required components (including JRE) prior to DBeaver installation. 
+				li All other versions are just minimal archives that don’t contain the JRE or an installer. Just unzip and start dbeaver executable (if you upgrade from a previous DBeaver version then delete it before upgrade).
