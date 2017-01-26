@@ -39,20 +39,22 @@
           <div class="registration"><a href="" class="login">Log in</a><a href="" class="btn btn--sign-up">sign up</a></div>
         </div>
       </header>
-      <main>
-        <div class="wrapper bd-top">
-          <div class="text-info">
-            <div class="text-info__header">
-              <h1>Download</h1>
-              <h2>DBeaver Community Edition 3.8.3</h2>
-              <p class="lnk-big">(<a href="">DBeaver Enterprise Edition </a>)</p>
-            </div>
+      <main class="bd-top">
+        <div class="download-header">
+          <div class="download-header__center">
+            <h1>Download</h1>
+            <h2>DBeaver Community Edition 3.8.3</h2>
+            <p class="lnk-big">(<a href="">DBeaver Enterprise Edition </a>)</p>
+          </div>
+          <div class="download-header__inner">
             <p>Released on 2017-01-09 ( <a href="">Milestones</a>) </p>
             <p>Here you can download DBeaver Community Edition. It is free and open source ( <a href="">license</a>). <br>
               Also you can get it from the <a href="">GitHub mirror.</a>
             </p>
           </div>
-          <div class="download-info">
+        </div>
+        <div class="download-info">
+          <div class="download-info__inner">
             <div class="download-info__item download-info--linux">
               <h3>Linux</h3>
               <p><a href="">Linux Debian package 32 bit (installer) </a></p>
@@ -75,40 +77,54 @@
               <p><a href="">Windows 32 bit (zip archive)</a></p>
               <p><a href="">Windows 64 bit (zip archive)</a></p>
             </div>
-            <div class="download-info__item">
+            <div class="download-info__item download-info--other">
               <h3>Other</h3>
               <p><a href="">Solaris x86 (tar.gz archive)</a></p>
             </div>
           </div>
-          <div class="text-info">
+        </div>
+        <div class="text-info">
+          <div class="text-info__inner">
             <p>Tested and verified for MS Windows XP/7/8/10, Linux and Mac OS X.DBeaver itself requires Java 1.7 or higher. Windows installers includes JRE 1.8. If you are NOT on Windows you have to setup Java. </p>
             <p>If you are on Mac OS X then you will need JDK 1.7+. Note: 3rd-party JDBC drivers may have have their own system requirements.</p>
           </div>
-          <div class="text-info">
+        </div>
+        <div class="text-info">
+          <div class="text-info__inner">
             <h2>Install</h2>
             <p>ZIP archive – extract archive and run “dbeaver” executable. Do not extract archive over previous version (remove previous version before install). Java 1.7+ must be installed separately. </p>
             <p>Windows installer – run installer executable. It will automatically upgrade version (if needed). Installer doesn’t change any system settings or Java installation. Included JRE will be accessible only for DBeaver.</p>
             <p>Debian package – run sudo dpkg -i dbeaver-<version>.deb. Then execute “dbeaver &”. RPM package – run sudo rpm -ivh dbeaver-<version>.rpm. Then execute “dbeaver &”. Note: to upgrade use “-Uvh” parameter. Mac OS X – recent Mac OS versions may reject to install unsigned software. Check this topic for possible workarounds.</p>
           </div>
-          <div class="text-info">
+        </div>
+        <div class="text-info">
+          <div class="text-info__inner">
             <h2>Enterprise Edition</h2>
             <p>Download Enterprise Edition version if you need NoSQL databases support or additional project management features. EE version is also free but it is not open-source.</p>
           </div>
-          <div class="text-info">
+        </div>
+        <div class="text-info">
+          <div class="text-info__inner">
             <h2>Eclipse plugin</h2>
             <p>Update site URL: <a href="http://dbeaver.jkiss.org/update/latest/" target="_blank">http://dbeaver.jkiss.org/update/latest/ </a>(Multiplatform)</p>
             <p>Eclipse Marketplace direct install:<a href="https://marketplace.eclipse.org/content/dbeaver" target="_blank"> https://marketplace.eclipse.org/content/dbeaver</a></p>
             <p>Eclipse plugin version is quite stable however it wasn’t tested as much as standalone version. Plugin will work with Eclipse 3.7.x, 3.8.x, 4.2.x-4.5.x. Required plugins: gef and draw2d.</p>
           </div>
-          <div class="text-info">
+        </div>
+        <div class="text-info">
+          <div class="text-info__inner">
             <h2>Source code</h2>
             <p>We have moved to GitHub. Community Edition sources, issue tracker, etc: <a href="https://github.com/serge-rider/dbeaver" target="_blank">https://github.com/serge-rider/dbeaver </a>Please star the repository!</p>
           </div>
-          <div class="text-info">
+        </div>
+        <div class="text-info">
+          <div class="text-info__inner">
             <h2>Archive</h2>
             <p>All recent DBeaver versions are available in <a href="">archive.</a></p>
           </div>
-          <div class="text-info">
+        </div>
+        <div class="text-info">
+          <div class="text-info__inner">
             <h2>Notes</h2>
             <p>DBeaver is free software. You can use it for any purpose with no limitations. This software is provided “as is” without express or implied warranty. </p>
             <p>Windows Installer will automatically install DBeaver on your computer. Java Runtime will be installed as a part of DBeaver installation. If you already have JRE installed on your computer you may disable JRE option in installer. However it is recommended to use JRE shipped with DBeaver (it won’t be break any existing JRE installation, nothing will be copied in system folders, registry or environment variables). </p>
@@ -119,15 +135,6 @@
               <script src="//yastatic.net/share2/share.js"></script>
               <div data-services="facebook,twitter,gplus" data-lang="en" data-size="s" class="ya-share2"></div>
             </div>
-          </div>
-          <div class="text-info">
-            <h2>List</h2>
-            <ul>
-              <li>DBeaver is free software. You can use it for any purpose with no limitations. This software is provided “as is” without express or implied warranty. </li>
-              <li>Windows Installer will automatically install DBeaver on your computer. Java Runtime will be installed as a part of DBeaver installation. If you already have JRE installed on your computer you may disable JRE option in installer. However it is recommended to use JRE shipped with DBeaver (it won’t be break any existing JRE installation, nothing will be copied in system folders, registry or environment variables). </li>
-              <li>Debian installer will setup all required components (including JRE) prior to DBeaver installation. </li>
-              <li>All other versions are just minimal archives that don’t contain the JRE or an installer. Just unzip and start dbeaver executable (if you upgrade from a previous DBeaver version then delete it before upgrade).</li>
-            </ul>
           </div>
         </div>
       </main>

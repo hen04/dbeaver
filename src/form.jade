@@ -1,43 +1,44 @@
 extends template.jade
 
 block content
-	.wrapper.bd-top
-		.dbeaver-form
-			h1 General enquiries
-			p You can contatc me by e-mail. I frequently chek my e-mail so you’ll either be responded to immediately or hear from me soon.
-			p E-mail: 
-				a(href="mailto:") michael@visser.com.au
-			p IM: 
-				a(href="mailto:doubleplusminus@hotmail.com") doubleplusminus@hotmail.com
-			form(action="")
-				.form-row
-					label(for="name" class="label-left") Your Name
-					input(type="text" name="name" id="name" class="input-default" placeholder="Enter your name")
-					span (required)
-				.form-row
-					label(for="email" class="label-left") E-mail
-					input(type="email" name="email" id="email" class="input-default" placeholder="name@email.com")
-					span (valid email required)
-				.form-row
-					label(for="website" class="label-left") Website
-					input(type="text" name="website" id="website" class="input-default" placeholder="www.")
-				.form-row
-					label(for="select" class="label-left") Select
-					select(name="select" id="select" class="select")
-						option(value="") 
-						option(value="Select 1") Select 1
-						option(value="Select 2") Select 2
-						option(value="Select 3") Select 3
-				.form-row
-					label(for="message" class="label-left label-top") Message
-					textarea(name="message" id="message" class="ta-default" placeholder="Please feel free to contact us!")
-				.form-row.inp-dbeaver.inp-dbeaver--check
-					input(type="checkbox" name="" id="check")
-					label(for="check") I agree with terms of service
-				.form-row.inp-dbeaver.inp-dbeaver--radio
-					input(type="radio" name="option" id="radio-1")
-					label(for="radio-1") Option 1
-					input(type="radio" name="option" id="radio-2")
-					label(for="radio-2") Option 2
-				.form-row
-					input(type="submit", value="Send" class="submit")
+	main.bd-top
+		.wrapper 
+			.dbeaver-form
+				h1 General enquiries
+				p You can contatc me by e-mail. I frequently chek my e-mail so you’ll either be responded to immediately or hear from me soon.
+				p E-mail: 
+					a(href="mailto:") michael@visser.com.au
+				p IM: 
+					a(href="mailto:doubleplusminus@hotmail.com") doubleplusminus@hotmail.com
+				form(action="")
+					.form-row
+						label(for="name" class="label-left") Your Name
+						input(type="text" name="name" id="name" class="input-default" placeholder="Enter your name")
+						span (required)
+					.form-row
+						label(for="email" class="label-left") E-mail
+						input(type="email" name="email" id="email" class="input-default" placeholder="name@email.com")
+						span (valid email required)
+					.form-row
+						label(for="website" class="label-left") Website
+						input(type="text" name="website" id="website" class="input-default" placeholder="www.")
+					.form-row
+						label(for="select" class="label-left") Select
+						select(name="select" id="select" class="select")
+							option(value="") 
+							option(value="Select 1") Select 1
+							option(value="Select 2") Select 2
+							option(value="Select 3") Select 3
+					.form-row
+						label(for="message" class="label-left label-top") Message
+						textarea(name="message" id="message" class="ta-default" placeholder="Please feel free to contact us!")
+					.form-row.inp-dbeaver.inp-dbeaver--check
+						input(type="checkbox" name="" id="check")
+						label(for="check") I agree with terms of service
+					.form-row.inp-dbeaver.inp-dbeaver--radio
+						input(type="radio" name="option" id="radio-1")
+						label(for="radio-1") Option 1
+						input(type="radio" name="option" id="radio-2")
+						label(for="radio-2") Option 2
+					.form-row
+						input(type="submit", value="Send" class="submit")

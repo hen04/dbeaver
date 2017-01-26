@@ -15,60 +15,11 @@
 - 2.5. Вертикальные отступы не соответствуют.
 - 2.6. Снова проблема с отступами. Должны быть одинаковые.
 
-.header-info {
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-	-webkit-flex-flow: row nowrap;
-	flex-flow: row nowrap;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
-	padding: 16px 0;
-}
-.registration {
-	margin: 30px -10px 0 0;
-}
-.login {
-	color: #372822;
-	margin-right: 23px;
-	font-size: 15px;
-}
-.main-info h3 {
-  font-size: 20px;
-  font-weight: 300;
-  margin-bottom: 12px;
-}
-.main-info p {
-  max-width: 200px;
-  margin: 0 auto;
-  font-weight: 300;
-  line-height: 1.6;
-  font-size: 14px;
-}
 .login &:hover {
 	text-decoration: none;
 	color: #ff9f00;
   -webkit-transition: .5s;
   transition: .5s;
-}
-.slick-dots button {
-  width: 7px;
-  height: 7px;
-  padding: 0;
-}
-.slick-dots li {
-  border: 1px solid #fff;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  margin: 0 8px;
-}
-.slick-dots li:hover {
-  background-color: #fff;
-}
-.slick-dots .slick-active {
-  background-color: #fff;
-  border: 1px solid #fff;
 }
 .main-menu-1level > li.active a - удалить
 
@@ -77,34 +28,8 @@
   background-color: transparent;
   z-index: 1;
 }
-h2 {
-	font-weight: 300;
-	font-size: 40px;
-	text-align: center;
-	margin-bottom: 19px;
-}
-.text-info__header {
-  margin-bottom: 47px;
-}
-p,
-li {
-	margin-bottom: 24px;
-	line-height: 1.5;
-}
-.text-info {
-	padding: 55px 205px 25px;
-}
 
 .bd-top {
 	border-top: 1px solid #ecded8;
 	padding: 48px 0;
-}
-.bd-top {
-	border-top: 1px solid #ecded8;
-	padding: 48px 0;
-	& div:last-child,
-	& div:last-child *:last-child {
-		padding-bottom: 0;
-		margin-bottom: 0;
-	}
 }
