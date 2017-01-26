@@ -26,7 +26,7 @@ p {
 }
 p,
 li {
-	margin-bottom: 15px;
+	margin-bottom: 24px;
 	line-height: 1.5;
 }
 h1 {
@@ -39,7 +39,7 @@ h2 {
 	font-weight: 300;
 	font-size: 40px;
 	text-align: center;
-	margin-bottom: 25px;
+	margin-bottom: 19px;
 }
 h3 {
 	font-size: 20px;
@@ -115,10 +115,11 @@ ol {
 }
 .login {
 	color: #372822;
-	margin-right: 15px;
+	margin-right: 23px;
 	font-size: 15px;
 	&:hover {
 		text-decoration: none;
+		color: #ff9f00;
 	}
 }
 header {
@@ -133,9 +134,7 @@ header {
 	flex-flow: row nowrap;
 	-webkit-justify-content: space-between;
 	justify-content: space-between;
-	-webkit-align-items: center;
-	align-items: center;
-	padding: 23px 0 16px;
+	padding: 16px 0;
 }
 .logo-menu {
 	display: -webkit-flex;
@@ -181,13 +180,11 @@ header {
 			height: 3px;
 			left: -15px;
 			right: -15px;
-			top: 38px;
-			background-color: #fff;
+			top: 62px;
+			background-color: transparent;
+			z-index: 1;
 		}
 		&.active {
-			a {
-				color: #ff9f00;
-			}
 			&:after {
 				background-color: #ff9f00;
 			}
@@ -246,7 +243,7 @@ header {
 	}
 }
 .registration {
-	margin-right: -10px;
+	margin: 30px -10px 0 0;
 }
 .dbeaver-info {
 	background-color: #cebdac;
@@ -290,16 +287,23 @@ header {
 	width: 450px;
 	.slick-dots {
 		li {
-			background-color: #fff;
 			border: 1px solid #fff;
 			width: 7px;
 			height: 7px;
 			border-radius: 50%;
 			margin: 0 8px;
+			&:hover {
+				background-color: #fff;
+			}
 		}
 		.slick-active {
-			background-color: transparent;
+			background-color: #fff;
 			border: 1px solid #fff;
+		}
+		button {
+			width: 7px;
+			height: 7px;
+			padding: 0;
 		}
 		button:before {
 			content: '';
@@ -330,13 +334,14 @@ header {
 	h3 {
 		font-size: 20px;
 		font-weight: 300;
-		margin-bottom: 10px;
+		margin-bottom: 12px;
 	}
 	p {
 		max-width: 200px;
 		margin: 0 auto;
 		font-weight: 300;
-		line-height: 1.5;
+		line-height: 1.6;
+		font-size: 14px;
 	}
 }
 .using {
@@ -444,10 +449,15 @@ footer {
 }
 .bd-top {
 	border-top: 1px solid #ecded8;
-	padding: 50px 0;
+	padding: 48px 0;
+	& div:last-child,
+	& div:last-child *:last-child {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
 }
 .text-info {
-	padding: 55px 205px;
+	padding: 55px 205px 25px;
 	position: relative;
 	&:before {
 		content: '';
@@ -459,7 +469,7 @@ footer {
 		background-color: #ecded8;
 	}
 	&__header {
-		margin-bottom: 50px;
+		margin-bottom: 47px;
 	}
 }
 .download-info {
@@ -621,4 +631,7 @@ footer {
 	input[type="radio"]:checked + label {
 		background: url(../img/sprite-dbeaver.png) 0 0 no-repeat;
 	}
+}
+.counter {
+	margin-bottom: 25px;
 }
