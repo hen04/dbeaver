@@ -1,0 +1,27 @@
+extends template.jade
+
+block content
+	main.bd-top
+		.wrapper
+			.registration-page
+				h1 Join DBeaver
+				h4 The best Multi-platform database tool for developers
+				
+				.reg-form
+					h4 Create your personal account
+					form(action="")
+						.reg-form-row
+							label(for="name" class="label-reg") Username
+							input(type="text" name="name" id="name" class="input-reg")
+							span.sm-info-reg This will be your username — you can enter your organization’s username next.
+						.reg-form-row
+							label(for="name" class="label-reg") Email Address
+							input(type="text" name="name" id="name" class="input-reg")
+							span.sm-info-reg You will occasionally receive account related emails. We promise not to share your email with anyone.
+						.reg-form-row
+							label(for="name" class="label-reg") Password
+							input(type="text" name="name" id="name" class="input-reg")
+							span.sm-info-reg Use at least one lowercase letter, one numeral, and seven characters.
+						.reg-info
+							p By clicking on “Create an account” below, you are agreeing to the Terms of Service and the Privacy Policy.
+						input(type="submit" value="create an account" class="submit")
