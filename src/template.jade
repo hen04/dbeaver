@@ -7,9 +7,11 @@ html(lang="en")
 		link(rel="stylesheet", href="css/normalize.css")
 		link(rel="stylesheet", href="css/slick.css")
 		link(rel="stylesheet", href="css/slick-theme.css")
+		link(rel="stylesheet", href="css/select2.min.css")
 		link(rel="stylesheet", href="css/dbeaver.css")
 		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
 		script(src="js/slick.min.js")
+		script(src="js/select2.full.min.js")
 		script(src="js/dbeaver.js")
 	body
 		.main-content
@@ -21,7 +23,7 @@ html(lang="en")
 								img(src="img/logo.png", alt="")
 						.main-menu
 							ul.main-menu-1level
-								li.menu-arrow
+								li.menu-item-has-children
 									a(href="") About
 									ul.main-menu-2level
 										li
@@ -32,7 +34,7 @@ html(lang="en")
 											a(href="") Contributors
 										li
 											a(href="") Contacts
-								li.active
+								li.current-menu-item
 									a(href="download.html") Download
 								li
 									a(href="") Purchase
@@ -51,7 +53,7 @@ html(lang="en")
 		footer
 			.wrapper.footer-menu
 				ul.footer-menu-1level
-					li.menu-arrow
+					li.menu-item-has-children
 						a(href="") About
 						ul.footer-menu-2level
 							li

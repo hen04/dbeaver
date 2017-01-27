@@ -14,18 +14,17 @@ block content
 					.form-row
 						label(for="name" class="label-left") Your Name
 						input(type="text" name="name" id="name" class="input-default" placeholder="Enter your name")
-						span (required)
+						span.required (required)
 					.form-row
 						label(for="email" class="label-left") E-mail
 						input(type="email" name="email" id="email" class="input-default" placeholder="name@email.com")
-						span (valid email required)
+						span.required (valid email required)
 					.form-row
 						label(for="website" class="label-left") Website
 						input(type="text" name="website" id="website" class="input-default" placeholder="www.")
 					.form-row
 						label(for="select" class="label-left") Select
 						select(name="select" id="select" class="select")
-							option(value="") 
 							option(value="Select 1") Select 1
 							option(value="Select 2") Select 2
 							option(value="Select 3") Select 3

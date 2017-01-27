@@ -15,7 +15,7 @@ gulp.task('jade', function(){
 // style
 gulp.task('style', function () {
 	gulp.src('src/scss/*.scss')
-		.pipe(style().on('error', style.logError))
+		.pipe(style({outputStyle: 'expanded'}).on('error', style.logError))
 		.pipe(gulp.dest('build/css/'))
 		.on('end', browserSync.reload);
 });
